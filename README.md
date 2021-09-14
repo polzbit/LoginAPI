@@ -6,7 +6,7 @@ safe store of session data, safe store of cookie data and handle reset password 
 front built using React.
 
 <p align="center">
-    <img height="600" width="800" src="https://raw.githubusercontent.com/polzbit/LoginAPI/main/Front/src/img/demo.png" />
+    <img height="400" width="500" src="https://raw.githubusercontent.com/polzbit/LoginAPI/main/Front/src/img/demo.png" />
 </p>
 
 ## Prerequirement
