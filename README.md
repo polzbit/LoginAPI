@@ -2,11 +2,11 @@
 
 ## Overview
 
-An api service to handle users login, registration, send verification mails, reset password Joi verifications on both ends, \
-data is hashed using salt key and sha512 algo and store on Mongodb, \
+An api service to handle users login, registration, send verification mails, reset user password \
+and Joi verifications on both ends, data is hashed using salt key and sha512 algo and store on Mongodb, \
 server is built using TypeScript and Express framework .\
 front is built using TypeScript React.\
-tests using jest library.\
+tests using jest library.
 
 <p align="center">
     <img height="400" width="500" src="https://raw.githubusercontent.com/polzbit/LoginAPI/main/demo.png" />
