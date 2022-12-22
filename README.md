@@ -3,7 +3,7 @@
 ## Overview
 
 An api service to handle users login, registration, send verification mails, reset user password \
-and Joi verifications on both ends, data is hashed using salt key and sha512 algo and store on Mongodb, \
+and Joi verifications on both ends, data is hashed using salt key and sha512 algo and store on Mongodb.
 
 server is built using TypeScript and Express framework .\
 front is built using TypeScript React.\
