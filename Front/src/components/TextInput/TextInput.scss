@@ -1,0 +1,47 @@
+@import '../../style/style.scss';
+
+.ui-text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  input {
+    outline: none;
+    border: none;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    &:focus {
+      box-shadow: 0 4px 2px -1px $PrimaryColor;
+    }
+  }
+  .input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    .password-button {
+      position: absolute;
+      right: 0;
+      height: 50px;
+      width: 50px;
+      .ui-tooltip {
+        button {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .error-text {
+    color: $ErrorColor;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+}
+.input-error {
+  input {
+    border-bottom-color: $ErrorColor;
+  }
+}

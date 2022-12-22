@@ -1,0 +1,44 @@
+@import '../../style/style.scss';
+
+.ui-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  width: fit-content;
+  .tabs-header {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    .tab-header {
+      cursor: pointer;
+      .ui-button {
+        .ui-tooltip {
+          button {
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.4);
+            border-radius: 0;
+            min-width: 100px;
+            transition: box-shadow 0.5s;
+            &:hover {
+              background-color: transparent;
+              color: rgba(0, 0, 0, 0.4);
+            }
+          }
+        }
+      }
+    }
+    .tab-active {
+      .ui-button {
+        .ui-tooltip {
+          button {
+            color: $PrimaryColor;
+            box-shadow: 0 4px 2px -1px $PrimaryColor;
+          }
+        }
+      }
+    }
+  }
+}

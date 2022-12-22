@@ -1,0 +1,40 @@
+@import '../../style/style.scss';
+
+.ui-tooltip {
+  position: relative;
+  width: 80px;
+  .tooltip-text {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px 10px;
+    z-index: 100;
+    transition: opacity 0.5s;
+    border-radius: 4px;
+    span {
+      white-space: nowrap;
+      font-size: 14px;
+      color: $PrimaryColor;
+    }
+  }
+  .dir-top {
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .dir-bottom {
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .dir-right {
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translateY(-50%);
+  }
+  .dir-left {
+    top: 50%;
+    right: calc(100% + 5px);
+    transform: translateY(-50%);
+  }
+}

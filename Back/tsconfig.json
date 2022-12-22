@@ -1,0 +1,23 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "es6"
+    }
+  },
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "lib": ["ES5", "ES2015", "ES2016", "DOM", "ESNext"],
+    "types": ["node", "jest"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "outDir": "dist/esm",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "./**/*.ts"]
+}

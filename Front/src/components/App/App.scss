@@ -1,0 +1,11 @@
+.app {
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  height: 100vh;
+  .page {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
