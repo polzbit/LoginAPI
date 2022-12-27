@@ -2,6 +2,7 @@ import cx from 'classnames';
 import { FC, useState } from 'react';
 import { Eye, EyeSlash, Key } from 'phosphor-react';
 import { Button } from '../Button';
+import { Variants } from '../../utils/constants/types';
 
 export interface TextInputProps
   extends React.DetailedHTMLProps<
@@ -48,7 +49,7 @@ export const TextInput: FC<TextInputProps> = ({
         <input {...props} type={type} onChange={onChange} />
         {props.type === 'password' && (
           <Button
-            variant='text'
+            variant={Variants.Text}
             name='password-button'
             onClick={changeInputType}
           >

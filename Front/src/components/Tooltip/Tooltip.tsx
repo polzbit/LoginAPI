@@ -1,8 +1,9 @@
 import React, { FC, ReactNode, useState } from 'react';
+import { Directions } from '../../utils/constants/types';
 
 export interface TooltipProps {
   text: string;
-  direction: 'top' | 'left' | 'right' | 'bottom';
+  direction: Directions;
   children: ReactNode;
   name?: string;
 }

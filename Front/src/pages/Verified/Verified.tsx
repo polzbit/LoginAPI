@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { validateEmailAPI } from '../../api/usersAPI';
 import { Button } from '../../components/Button';
+import { Variants } from '../../utils/constants/types';
 
 export const Verified = () => {
   const { token } = useParams();
@@ -31,7 +32,7 @@ export const Verified = () => {
         <h1>{userInfo.email} verified successfully!</h1>
         <Button
           name='login-button'
-          variant='text'
+          variant={Variants.Text}
           onClick={() => navigate('/')}
         >
           <span>LOGIN</span>

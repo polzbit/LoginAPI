@@ -6,6 +6,7 @@ import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
 import errorMessages from '../../utils/constants/errors';
 import { resetPasswordSchema } from '../../utils/validation';
+import { Variants } from '../../utils/constants/types';
 
 export const ResetPassword = () => {
   const [state, setState] = useState({
@@ -102,7 +103,11 @@ export const ResetPassword = () => {
             <span data-testid='error' className='error'>
               {state.error}
             </span>
-            <Button name='reset-button' variant='fill' onClick={handleReset}>
+            <Button
+              name='reset-button'
+              variant={Variants.Fill}
+              onClick={handleReset}
+            >
               <span>RESET PASSWORD</span>
             </Button>
           </>
@@ -111,7 +116,11 @@ export const ResetPassword = () => {
             <span data-testid='success' className='success'>
               Password changed successfully!
             </span>
-            <Button name='reset-button' variant='fill' onClick={handleLogin}>
+            <Button
+              name='reset-button'
+              variant={Variants.Fill}
+              onClick={handleLogin}
+            >
               <span>LOGIN</span>
             </Button>
           </>

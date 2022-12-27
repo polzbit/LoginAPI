@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Directions, Variants } from '../../utils/constants/types';
 import { Tooltip } from '../Tooltip';
 
 export interface ButtonProps
@@ -6,17 +7,17 @@ export interface ButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  variant: 'text' | 'fill' | 'outline';
+  variant: Variants;
   name?: string;
   tooltip?: string;
-  tooltipDirection?: 'top' | 'left' | 'right' | 'bottom';
+  tooltipDirection?: Directions;
 }
 
 export const Button: FC<ButtonProps> = ({
   variant,
   name = 'button',
   tooltip = '',
-  tooltipDirection = 'bottom',
+  tooltipDirection = Directions.Bottom,
   ...props
 }) => {
   const { children } = props;

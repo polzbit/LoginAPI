@@ -14,6 +14,7 @@ import {
 } from '../../utils/validation';
 import { forgotPasswordAPI, loginAPI, registerAPI } from '../../api/usersAPI';
 import errorMessages from '../../utils/constants/errors';
+import { Origins, Variants } from '../../utils/constants/types';
 
 export const Login = () => {
   const [errors, setErrors] = useState({
@@ -112,7 +113,7 @@ export const Login = () => {
   return (
     <div className='login page gradient-anim' data-testid='login'>
       <div className='card'>
-        <Tabs direction='row'>
+        <Tabs direction={Origins.Row}>
           <Tab value='login'>
             <div className='content'>
               <UsersThree size={120} weight='fill' color='rgb(113, 153, 204)' />
@@ -132,7 +133,7 @@ export const Login = () => {
               />
               <Button
                 name='forgot-button'
-                variant='text'
+                variant={Variants.Text}
                 onClick={handleForgotPassword}
               >
                 <span>Forgot Password?</span>
@@ -146,7 +147,11 @@ export const Login = () => {
               >
                 {errors.login}
               </span>
-              <Button name='login-button' variant='fill' onClick={handleLogin}>
+              <Button
+                name='login-button'
+                variant={Variants.Fill}
+                onClick={handleLogin}
+              >
                 <span>Login</span>
               </Button>
             </div>
@@ -185,7 +190,7 @@ export const Login = () => {
                 </span>
                 <Button
                   name='login-button'
-                  variant='fill'
+                  variant={Variants.Fill}
                   onClick={handleRegister}
                 >
                   <span>Register</span>
